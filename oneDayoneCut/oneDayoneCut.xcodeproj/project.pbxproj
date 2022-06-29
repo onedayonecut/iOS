@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		14A5C4F5FCDDA289EC11358D /* Pods_oneDayoneCut.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E23BC222488483377F07EC63 /* Pods_oneDayoneCut.framework */; };
 		3051B95828698A6000C947EE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3051B95728698A6000C947EE /* AppDelegate.swift */; };
 		3051B95A28698A6000C947EE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3051B95928698A6000C947EE /* SceneDelegate.swift */; };
 		3051B95C28698A6000C947EE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3051B95B28698A6000C947EE /* ViewController.swift */; };
@@ -24,6 +25,9 @@
 		3051B96028698A6700C947EE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3051B96328698A6700C947EE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3051B96528698A6700C947EE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AF7A7175DCD7E7DB73AF1DCF /* Pods-oneDayoneCut.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-oneDayoneCut.debug.xcconfig"; path = "Target Support Files/Pods-oneDayoneCut/Pods-oneDayoneCut.debug.xcconfig"; sourceTree = "<group>"; };
+		CE0B315BB85DE6B8685AA65C /* Pods-oneDayoneCut.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-oneDayoneCut.release.xcconfig"; path = "Target Support Files/Pods-oneDayoneCut/Pods-oneDayoneCut.release.xcconfig"; sourceTree = "<group>"; };
+		E23BC222488483377F07EC63 /* Pods_oneDayoneCut.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_oneDayoneCut.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +35,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				14A5C4F5FCDDA289EC11358D /* Pods_oneDayoneCut.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		278F032A307D2AAB4A0FACB2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				AF7A7175DCD7E7DB73AF1DCF /* Pods-oneDayoneCut.debug.xcconfig */,
+				CE0B315BB85DE6B8685AA65C /* Pods-oneDayoneCut.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		3051B94B28698A5F00C947EE = {
 			isa = PBXGroup;
 			children = (
 				3051B95628698A6000C947EE /* oneDayoneCut */,
 				3051B95528698A6000C947EE /* Products */,
+				278F032A307D2AAB4A0FACB2 /* Pods */,
+				41BB1EE16868DEF726DFA059 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,6 +84,14 @@
 			path = oneDayoneCut;
 			sourceTree = "<group>";
 		};
+		41BB1EE16868DEF726DFA059 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E23BC222488483377F07EC63 /* Pods_oneDayoneCut.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,9 +99,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3051B96828698A6700C947EE /* Build configuration list for PBXNativeTarget "oneDayoneCut" */;
 			buildPhases = (
+				C84D70755F4004376C15409B /* [CP] Check Pods Manifest.lock */,
 				3051B95028698A6000C947EE /* Sources */,
 				3051B95128698A6000C947EE /* Frameworks */,
 				3051B95228698A6000C947EE /* Resources */,
+				55126639A344C02EE64EB464 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -132,6 +159,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		55126639A344C02EE64EB464 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-oneDayoneCut/Pods-oneDayoneCut-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-oneDayoneCut/Pods-oneDayoneCut-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-oneDayoneCut/Pods-oneDayoneCut-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C84D70755F4004376C15409B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-oneDayoneCut-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		3051B95028698A6000C947EE /* Sources */ = {
@@ -282,6 +351,7 @@
 		};
 		3051B96928698A6700C947EE /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AF7A7175DCD7E7DB73AF1DCF /* Pods-oneDayoneCut.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -310,6 +380,7 @@
 		};
 		3051B96A28698A6700C947EE /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CE0B315BB85DE6B8685AA65C /* Pods-oneDayoneCut.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
