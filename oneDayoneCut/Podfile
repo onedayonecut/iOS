@@ -6,7 +6,7 @@ target 'oneDayoneCut' do
   use_frameworks!
 
   pod 'FSCalendar'
-  pod 'SnapKit', '~> 5.6.0'
+  pod 'SnapKit'
   pod 'Then'
   # Pods for oneDayoneCut
 
